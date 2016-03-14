@@ -1,0 +1,219 @@
+<resources>
+    <string name="app_name">PSITE Portal</string>
+    <string name="launcher_name">PSITE</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_configuration">Configurations</string>
+    <string name="action_search">Search</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="nav_item_home">Profile</string>
+    <string name="nav_item_friends">Seminars</string>
+    <string name="nav_item_notifications">Take picture</string>
+    <string name="nav_item_election">Election</string>
+
+    <string name="hint_name">Username</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_re_password">Retype Password</string>
+    <string name="btn_sign_up">Log In</string>
+    <string name="err_msg_name">Enter your full name</string>
+    <string name="err_msg_email">Enter valid email address</string>
+    <string name="err_msg_password">Enter the password</string>
+
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Push Notifications</string>
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+    <string name="already_registered">Device is already registered on server.</string>
+    <string name="gcm_registered">From GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
+    <string name="gcm_message">From GCM: you got message!</string>
+    <string name="gcm_error">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">From Demo Server: successfully added device!</string>
+    <string name="server_unregistered">From Demo Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+    <string name="options_register">Register</string>
+    <string name="options_unregister">Unregister</string>
+    <string name="options_clear">Clear</string>
+    <string name="options_exit">Exit</string>
+
+    <string name="login_name">Login</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="seminar_title">Seminar</string>
+    <string name="register_name">Register</string>
+    <string name="cancel_name">Cancel</string>
+    <string name="register">Sign Up</string>
+    <string name="capture_image">Capture Image</string>
+    <string name="expense">Expense Manager</string>
+    <string name="register_user">Register User</string>
+    <string name="description">will vary; image taken from camera</string>
+    <string name="action_attendance">New</string>
+    <string name="action_seminar">New</string>
+    <string name="login_url">http://www.psite7.org/portal/webservices/login.php</string>
+    <string name="register_url">http://www.psite7.org/portal/webservices/register.php</string>
+    <string name="get_institutions_url">http://www.psite7.org/portal/webservices/get_institutions.php</string>
+    <string name="active_seminars_url">http://www.psite7.org/portal/webservices/active_seminars.php</string>
+    <string name="add_expense_url">http://www.psite7.org/portal/webservices/add_expense.php</string>
+    <string name="attendance_url">http://psite7.org/portal/webservices/upload_attendance.php</string>
+    <string name="transactions_url">http://www.psite7.org/portal/webservices/transactions.php</string>
+    <string name="get_seminar_url">http://www.psite7.org/portal/webservices/get_seminar.php</string>
+    <string name="get_user_url">http://www.psite7.org/portal/webservices/get_user.php</string>
+    <string name="update_seminar_url">http://www.psite7.org/portal/webservices/update_seminar.php</string>
+    <string name="payment_url">http://www.psite7.org/portal/webservices/payment.php</string>
+    <string name="update_config_url">http://www.psite7.org/portal/webservices/update_seminar_config.php</string>
+    <string name="election_attendance_url">http://www.psite7.org/portal/webservices/election_attendance.php</string>
+    <string name="get_election_url">http://www.psite7.org/portal/webservices/get_election.php</string>
+    <string name="nominees_url">http://www.psite7.org/portal/webservices/nominees.php</string>
+    <string name="vote_url">http://www.psite7.org/portal/webservices/vote.php</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_expense">Expense</string>
+    <string name="about_holder">Introduction (writing), a beginning section to a book, article or essay which states its purpose and goals. Foreword, a beginning section of a book, before the introduction, usually written by someone other than the author.</string>
+
+    <string name="add_photo">Upload Photo</string>
+
+    <string name="add_transaction">Transactions</string>
+
+    <string name="edit_seminar">Edit Seminar</string>
+
+    <string name="nav_item_profile">Profile</string>
+
+    <string name="nav_item_seminars">Seminars</string>
+
+    <string name="nav_item_news">News</string>
+
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_profile</item>
+        <item>@string/nav_item_seminars</item>
+        <item>@string/nav_item_news</item>
+        <item>@string/nav_item_election</item>
+
+    </string-array>
+
+    <integer-array name="nav_drawer_icons">
+        <item>@drawable/ic_content_paste_black_24dp</item>
+        <item>@drawable/ic_place_black_24dp</item>
+        <item>@drawable/ic_phone_black</item>
+        <item>@drawable/ic_school_black_24dp</item>
+    </integer-array>
+
+    <array name="liquidation_type">
+        <item>Collection</item>
+        <item>Expense</item>
+    </array>
+
+    <string name="desc_list_item_icon">Item Icon</string>
+
+    <string name="title_messages">Messages</string>
+    <string name="title_friends">Friends</string>
+    <string name="title_home">Home</string>
+    <string name="usertype_normal_user">member_individual</string>
+    <string name="usertype_institution_user">member_institution</string>
+    <string name="usertype_officer_member">officer_member</string>
+    <string name="title_activity_scrolling_election">ScrollingElectionActivity</string>
+    <string name="spinner_title">Select</string>
+
+    <string name="update_attendance_url">http://www.psite7.org/portal/webservices/enable_attendance.php</string>
+
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="fuck">fuck</string>
+</resources>

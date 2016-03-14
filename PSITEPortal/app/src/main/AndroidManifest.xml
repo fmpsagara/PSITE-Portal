@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.psiteportal.com.psiteportal"> <!-- GCM requires Android SDK version 2.2 (API level 8) or above. -->
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- GCM connects to Internet Services. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Creates a custom permission so only this app can receive its messages. -->
+    <permission
+        android:name="app.psiteportal.com.psiteportal.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="app.psiteportal.com.psiteportal.C2D_MESSAGE" />
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- Network State Permissions to detect Internet status -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Permission to vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="app.psiteportal.com.utils.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/psite"
+        android:label="@string/app_name"
+        android:theme="@style/MyMaterialTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="orientation"
+            android:label="@string/launcher_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:configChanges="orientation"
+            android:label="@string/register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddExpenseActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/expense" />
+        <activity
+            android:name=".RegisterSeminarScanner"
+            android:configChanges="orientation"
+            android:label="Seminar Registration"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OldMainActivity"
+            android:configChanges="orientation"
+            android:label="Seminar Registration"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LiquidationActivity"
+            android:configChanges="orientation"
+            android:label="Liquidation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SeminarProfileActivity"
+            android:configChanges="orientation"
+            android:label="@string/seminar_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddSeminarActivity"
+            android:configChanges="orientation"
+            android:label="Add Seminar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SeminarPanel"
+            android:configChanges="orientation"
+            android:label="Seminar Panel"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditSeminar"
+            android:configChanges="orientation"
+            android:label="Edit Seminar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ElectionActivity"
+            android:configChanges="orientation"
+            android:label="Election"
+            android:screenOrientation="portrait" />
+
+        <!--<receiver-->
+        <!--android:name="com.google.android.gcm.GCMBroadcastReceiver"-->
+        <!--android:permission="com.google.android.c2dm.permission.SEND">-->
+        <!--<intent-filter>-->
+
+        <!--&lt;!&ndash; Receives the actual messages. &ndash;&gt;-->
+        <!--<action android:name="com.google.android.c2dm.intent.RECEIVE" />-->
+        <!--&lt;!&ndash; Receives the registration id. &ndash;&gt;-->
+        <!--<action android:name="com.google.android.c2dm.intent.REGISTRATION" />-->
+
+        <!--<category android:name="app.psiteportal.com.psiteportal" />-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <!--<service android:name=".GCMIntentService" />-->
+
+        <!--<service android:name="app.psiteportal.com.gcm.IntentServiceGCM" />-->
+
+        <activity
+            android:name=".ScrollingElectionFragment"
+            android:label="@string/title_activity_scrolling_election"
+            android:theme="@style/MyMaterialTheme"></activity>
+        <!--<activity android:name="app.psiteportal.com.fragments.ElectionActivity2"-->
+        <!--android:configChanges="orientation"-->
+        <!--android:label="Election"-->
+        <!--android:screenOrientation="portrait" />-->
+        <activity
+            android:name=".ElectionDone"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TestActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="app.psiteportal.com.test.MainActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="app.psiteportal.com.psiteportal.UserProfileActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CaptureImageActivity"
+            android:configChanges="orientation"
+            android:label="Add Photo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TransactionDetailsActivity"
+            android:configChanges="orientation"
+            android:label="Election"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserProfileChangePicture"
+            android:configChanges="orientation"
+            android:label="Change Picture"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SeminarAttendance"
+            android:configChanges="orientation"
+            android:label="Change Picture"
+            android:screenOrientation="portrait" />
+
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="app.psiteportal.com.psiteportal" />
+            </intent-filter>
+        </receiver>
+        <!-- [END gcm_receiver] -->
+
+        <!-- [START gcm_listener] -->
+        <service
+            android:name="app.psiteportal.com.gcm.GCMListener"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <!-- [END gcm_listener] -->
+        <!-- [START instanceId_listener] -->
+        <!--<service-->
+        <!--android:name="gcm.play.android.samples.com.gcmquickstart.MyInstanceIDListenerService"-->
+        <!--android:exported="false">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.google.android.gms.iid.InstanceID"/>-->
+        <!--</intent-filter>-->
+        <!--</service>-->
+        <!-- [END instanceId_listener] -->
+        <service
+            android:name="app.psiteportal.com.gcm.IntentServiceGCM"
+            android:exported="false">
+        </service>
+
+    </application>
+
+</manifest>
